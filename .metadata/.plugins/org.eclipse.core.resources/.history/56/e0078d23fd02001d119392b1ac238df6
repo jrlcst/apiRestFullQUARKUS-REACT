@@ -1,0 +1,13 @@
+package com.github.jrlcst.dsmeta.entities;
+
+import java.util.Date;
+
+public class Sale {
+
+	private Long id;
+	private String sellerName;
+	private Integer visited;
+	private String deals;
+	private Integer amount;
+	private Date date;
+}

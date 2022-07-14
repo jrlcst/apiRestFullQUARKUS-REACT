@@ -1,0 +1,5 @@
+package com.github.jrlcst.dsmeta.repositories;
+
+public interface SaleRepository {
+
+}

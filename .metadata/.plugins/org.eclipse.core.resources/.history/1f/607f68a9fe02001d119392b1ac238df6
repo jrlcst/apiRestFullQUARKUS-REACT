@@ -1,0 +1,5 @@
+package com.github.jrlcst.dsmeta.services;
+
+public class SaleService {
+
+}

@@ -1,0 +1,15 @@
+package com.github.jrlcst.dsmeta.services;
+
+import java.util.List;
+
+import com.github.jrlcst.dsmeta.entities.Sale;
+import com.github.jrlcst.dsmeta.repositories.SaleRepository;
+
+public class SaleService {
+
+	SaleRepository repository;
+	
+	public List<Sale> findSales() {
+		return repository.findAll();
+	}
+}
