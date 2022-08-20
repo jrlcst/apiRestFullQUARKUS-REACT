@@ -7,6 +7,9 @@ import java.util.List;
 import java.util.Set;
 import java.util.stream.Collectors;
 
+/**
+ * classe responsavel por tratar o erro gerado pela Response
+ */
 public class ResponseError {
     public static final int UNPROCESSABLE_ENTITY_STATUS = 422;
 

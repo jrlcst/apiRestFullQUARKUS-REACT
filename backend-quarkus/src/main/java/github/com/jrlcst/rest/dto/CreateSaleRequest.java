@@ -7,6 +7,9 @@ import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotNull;
 import java.time.LocalDate;
 
+/**
+ * classe criada para setar os atributos inseridos no JSON
+ */
 public class CreateSaleRequest {
 
     Long id;

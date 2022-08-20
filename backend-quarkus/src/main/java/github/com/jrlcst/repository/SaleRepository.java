@@ -12,6 +12,13 @@ import java.util.List;
 @ApplicationScoped
 public class SaleRepository implements PanacheRepository<Sale> {
 
+    /**
+     * executa a query no banco para trazer a venda,
+     * passando a data minima e maxima como parametros
+     * @param min
+     * @param max
+     * @return
+     */
     public List<Sale> findSalesParams(LocalDate min, LocalDate max){
         var params = Parameters.with(
                 "min", min).and("max", max).map();

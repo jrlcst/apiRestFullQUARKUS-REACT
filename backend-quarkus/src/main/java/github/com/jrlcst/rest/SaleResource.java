@@ -25,6 +25,9 @@ public class SaleResource {
     private SaleRepository repository;
 
     @GET
+    /**
+     * traz vendas filtradas por data minima e máxima
+     */
     public Response findSales(@QueryParam("minDate") String minDate,
                               @QueryParam("maxDate") String maxDate) {
         List<Sale> query = service.findSales(minDate, maxDate);
@@ -33,6 +36,9 @@ public class SaleResource {
 
     @POST
     @Transactional
+    /**
+     * metodo de insert dos dados de uma venda via request http
+     */
     public Response createSale(CreateSaleRequest saleRequest) {
         LocalDate today = LocalDate.ofInstant(Instant.now(), ZoneId.systemDefault());
 
@@ -55,6 +61,9 @@ public class SaleResource {
     @DELETE()
     @Path("{id}")
     @Transactional
+    /**
+     * deleta venda por id selecionado
+     */
     public Response deleteSale(@PathParam("id") Long id) {
         Sale sale = repository.findById(id);
 
@@ -69,6 +78,10 @@ public class SaleResource {
     @PUT()
     @Path("{id}")
     @Transactional
+    /**
+     * busca a venda pelo id e,
+     * atualiza o dado de venda de acordo com o atributo alterado
+     */
     public Response updateSale(@PathParam("id") Long id, CreateSaleRequest saleRequest) {
         Sale sale = repository.findById(id);
         LocalDate today = LocalDate.ofInstant(Instant.now(), ZoneId.systemDefault());

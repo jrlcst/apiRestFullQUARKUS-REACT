@@ -1,5 +1,8 @@
 package github.com.jrlcst.rest.dto;
 
+/**
+ * classe Value Object para criação de erro personalizado
+ */
 public class FieldError {
     private String Field;
     private String message;

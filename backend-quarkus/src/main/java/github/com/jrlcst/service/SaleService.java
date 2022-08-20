@@ -16,6 +16,14 @@ public class SaleService {
     @Inject
     SaleRepository repository;
 
+    /**
+     * faz a conversão de String para Date,
+     * e valida caso a data minima ou maxima vier null,
+     * traz data minima de 1 ano atras, e data maxima do dia atual
+     * @param minDate
+     * @param maxDate
+     * @return
+     */
     public List<Sale> findSales(String minDate, String maxDate) {
 
         LocalDate today = LocalDate.ofInstant(Instant.now(), ZoneId.systemDefault());
