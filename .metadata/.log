@@ -491,3 +491,18 @@ java.util.concurrent.TimeoutException
 	at org.springframework.tooling.jdt.ls.commons.classpath.SendClasspathNotificationsJob.flush(SendClasspathNotificationsJob.java:178)
 	at org.springframework.tooling.jdt.ls.commons.classpath.SendClasspathNotificationsJob.run(SendClasspathNotificationsJob.java:149)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-07-16 16:22:24.653
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.VFwWZYgF
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-07-16 16:22:24.655
+!MESSAGE unsubscribing from classpath changes: sts4.classpath.VFwWZYgF
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-07-16 16:22:24.656
+!MESSAGE subsribers = {}
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-07-16 16:22:24.657
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.VFwWZYgF => OK
+
+!ENTRY org.eclipse.ui 2 2 2022-07-16 16:22:25.478
+!MESSAGE Invalid property category path: org.springframework.ide.eclipse.beans.ui.properties.ProjectPropertyPage (bundle: org.springframework.ide.eclipse.xml.namespaces, propertyPage: org.springframework.ide.eclipse.beans.ui.namespaces.projectPropertyPage)
